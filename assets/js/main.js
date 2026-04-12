@@ -48,6 +48,7 @@ const swiperHome = new Swiper('.home__swiper', {
 
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
+
 const bgHeader = () => {
   const header = document.getElementById('header')
   // Add a class if the bottom offset is greater than 50 of the viewport
