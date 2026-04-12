@@ -401,6 +401,13 @@ background-color: var(--black-color);
 
 .button:hover i{
   transform: translateX(.5rem);
+} 
+
+.button__ghost{
+  background-color: transparent;
+  box-shadow: none;
+  border: 2px solid var(--white-color);
+  color: var(--white-color);
 }
 
 /*=============== ABOUT ===============*/
@@ -416,6 +423,7 @@ background-color: var(--black-color);
 .about__title{
   color: var(--white-color);
   margin-bottom: 1rem;
+  
 }
 
 .about__title span{
@@ -431,6 +439,25 @@ background-color: var(--black-color);
   color: var(--white-color);
 }
 
+
+.about__video{
+  position: relative;
+  width: 250px;
+  height: 320px;
+  justify-self: center;
+  box-shadow: var(--shadow-img);
+  transform: skew(-12deg);
+  display: grid;
+  overflow:hidden ;
+}
+
+.about__file{
+  max-width: initial;
+  height: 320px;
+  transform: skew(12deg);
+  position:absolute;
+  justify-self: center;
+}  
 /*=============== MODELS ===============*/
 
 
