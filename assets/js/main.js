@@ -1,26 +1,24 @@
 /*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById('nav-menu'),
-      navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close');
+const navMenu = document.getElementById('nav-menu')
+const navToggle = document.getElementById('nav-toggle')
+const navClose = document.getElementById('nav-close')
 
-/* Menu show */
-if (navToggle) {
-  navToggle.addEventListener('click', () => {
-    navMenu.classList.add('show-menu');
-  });
+if(navToggle){
+  navToggle.addEventListener('click', () =>{
+    navMenu.classList.add('show-menu')
+  })
 }
 
-/* Menu hidden */
-if (navClose) {
-  navClose.addEventListener('click', () => {
-    navMenu.classList.remove('show-menu');
-  });
+if(navClose){
+  navClose.addEventListener('click', () =>{
+    navMenu.classList.remove('show-menu')
+  })
 }
 
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav__link')
 
-const linkAction = () =>{
+const linkAction = () => {
   const navMenu = document.getElementById('nav-menu')
   // When we click on each nav__link, we remove the show-menu class
   navMenu.classList.remove('show-menu')
@@ -28,23 +26,39 @@ const linkAction = () =>{
 
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
-/*=============== SWIPER HOME ===============*/ 
+/*=============== SWIPER HOME ===============*/
 const swiperHome = new Swiper('.home__swiper', {
-           pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-        renderBullet:(index, className)=> {
-          return '<span class="' + className + '">' + String(index + 1).padStart(2,'0') + "</span>";
-        },
-      },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    renderBullet: (index, className) => {
+      return '<span class="' + className + '">' + String(index + 1).padStart(2, '0') + "</span>";
+    },
+  },
+
+//   autoplay: {
+//   delay: 5000,
+// }
+
+
 });
 
 
 
+
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
+const bgHeader = () => {
+  const header = document.getElementById('header')
+  // Add a class if the bottom offset is greater than 50 of the viewport
+  this.scrollY >= 50 ? header.classList.add('bg-header')
+                     : header.classList.remove('bg-header')
+}
+
+window.addEventListener('scroll', bgHeader)
 
 
-/*=============== SHOW SCROLL UP ===============*/ 
+/*=============== SHOW SCROLL UP ===============*/
 
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
