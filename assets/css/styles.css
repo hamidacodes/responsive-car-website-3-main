@@ -145,6 +145,8 @@ video {
 }
 
 /*=============== HEADER & NAV ===============*/
+
+
 .header{
   position: fixed;
   width: 100%;
@@ -165,6 +167,7 @@ video {
 
 .nav__logo{
   color: var(--black-color);
+  color: var (--black-color);
   font-weight: var(--font-bold);
 }
 
@@ -182,6 +185,9 @@ video {
     top: -120%;
     left: 0;
     background-color: var(--body-color) ;
+    top: 0;
+    left: 0;
+    background-color: var (--body-color) ;
     width: 100%;
     padding-block: 4rem;
     box-shadow: 0 4px 16px hsla(0,0%,0%.1);
@@ -211,7 +217,11 @@ background-color: var(--black-color);
   position: absolute;
   left: 0;
   bottom:-.5rem ;
+
   transition:width .4s;
+
+  transition: width .4s;
+
 }
 
 .nav__link:hover::after{
@@ -220,6 +230,7 @@ background-color: var(--black-color);
 
 .nav__close{
   position:absolute;
+
   top: 1rem;
   right: 1.5rem;
 }
@@ -228,6 +239,14 @@ background-color: var(--black-color);
   top: 0;
 }
 
+
+/* Navigation for mobile devices */
+
+
+/* Show menu */
+
+
+
 /* Change background header */
 
 
@@ -235,6 +254,7 @@ background-color: var(--black-color);
 
 
 /*=============== HOME ===============*/
+
 .home{
   position: relative;
   height: 730px;
@@ -336,6 +356,13 @@ background-color: var(--black-color);
    column-gap: 1.5rem;
 }
 
+
+
+
+/* Swiper class */
+
+
+
 /*=============== BUTTON ===============*/
 
 
@@ -373,4 +400,8 @@ background-color: var(--black-color);
 /* For large devices */
 
 
+
 /* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+
+/* For 2K resolutions (2048 x 1152, 2048 x 1536) */
+

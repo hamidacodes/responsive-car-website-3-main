@@ -39,6 +39,8 @@ const swiperHome = new Swiper('.home__swiper', {
       },
 });
 
+
+
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
 
