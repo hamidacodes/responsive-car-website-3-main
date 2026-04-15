@@ -700,6 +700,12 @@ background-color: var(--black-color);
   transition: bottom .4s, transform .4s;
 
 }
+ 
+.scrollup:hover{
+  transform: translateY(-.5rem);
+}
+
+
 
 /* Show Scroll Up */
 
