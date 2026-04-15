@@ -621,6 +621,21 @@ background-color: var(--black-color);
 }
 
 /*=============== FOOTER ===============*/
+.footer{
+  background-color: var(--body-second-color);
+  padding-block:2rem
+}
+
+.footer__container{
+  row-gap: 3rem;
+}
+
+.footer__logo{
+  justify-self: flex-start;
+  color: var(--white-color);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-bold);
+}
 
 
 /*=============== SCROLL BAR ===============*/
